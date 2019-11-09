@@ -63,7 +63,7 @@
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">       
       
         <ul class="progress-tracker progress-tracker--text">
-          <li class="progress-step is-active">
+          <li id="pt1" class="progress-step is-active">
             <div class="progress-marker"></div>
             <div class="progress-text">
               <h4 class="progress-title">Check Address</h4>
@@ -75,7 +75,7 @@
             </div>
           </li>
 
-          <li class="progress-step">
+          <li id="pt2" class="progress-step">
             <div class="progress-marker"></div>
             <div class="progress-text">
               <h4 class="progress-title">Choose Plan/Backup</h4>
@@ -98,7 +98,7 @@
             </div>
           </li>
 
-		<li class="progress-step" aria-current="step">
+		<li class="" aria-current="step">
             <div class="progress-marker"></div>
             <div class="progress-text">
               <h4 class="progress-title"></h4>
@@ -275,6 +275,9 @@
         //prevent Default functionality
         e.preventDefault();
 		$("#plans_div").toggle();
+		$("#pt2").addClass("is-active");
+		$("#pt1").addClass("is-complete");
+		$("#pt1").removeClass("is-active");
 
 	}
 	)

@@ -1,0 +1,276 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Pricing example for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/pricing.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="progress-tracker/src/styles/progress-tracker.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+
+	</head>
+
+  <body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+
+		<span class="tcom-global-header__logo"></span>
+      <h5 class="my-0 mr-md-auto font-weight-normal">Telstra</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        
+        
+        <a class="p-2 text-dark" href="#">Support</a>
+        
+      </nav>
+      <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">NBN Plans and Bundles</h1>
+      <p class="lead">Fast, reliable nbn.
+			Now with your
+			first month on us.
+		</p>
+
+			
+    </div>
+
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">       
+      
+        <ul class="progress-tracker progress-tracker--text">
+          <li class="progress-step is-complete">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <h4 class="progress-title">Check Address</h4>
+			<div class="progress_sub_steps">
+              <div>1. Check which plans are avaialable</div>
+			  <div>2. View connection speed in your area</div>
+			  <div>3. Check by when you will get this connection</div>
+			</div>
+            </div>
+          </li>
+
+          <li class="progress-step is-active">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <h4 class="progress-title">Choose Package and Alternatives</h4>
+              Choose the NBN plan, and alternative connection(4Gx) till nbn is activated
+            </div>
+          </li>
+
+          <li class="progress-step" aria-current="step">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <h4 class="progress-title">Track Your Order</h4>
+              Track the status of the order
+            </div>
+          </li>
+
+		<li class="progress-step" aria-current="step">
+            <div class="progress-marker"></div>
+            <div class="progress-text">
+              <h4 class="progress-title"></h4>
+              
+            </div>
+          </li>
+
+        </ul>        
+      
+      
+    </div>
+
+	<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+
+	<form id="address_form" name="address_form">
+		  <div class="form-group">
+			<label for="exampleInputAddress">Check nbn availability at your address</label>
+			<input type="search" class="form-control" id="input_address" aria-describedby="emailHelp" placeholder="Enter Address">
+		</div>
+		  <button type="submit" class="btn btn-primary">Check Now</button>
+	</form>
+
+
+	</div>
+
+    <div class="container">
+
+	  <div id="plans_div">
+
+	  <h1 style="text-align:center;"><span class="badge badge-default">We found the following plans for you</span></h1>
+      <div class="card-deck mb-3 text-center">
+		<div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Standard</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$50 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled pricing-list mt-3 mb-4">
+              <li>First month internet on us</li>
+              <li>No $99 connection fee</li>
+			  <li>40Mbps typical minimum evening speeds.</li>
+              <li class="highlight-list">Average speed near your area: 45MBps</li>
+              
+			  <li class="highlight-list">Predicted connection date: 12-11-2019</li>
+
+			  <li>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<label class="form-check-label" for="defaultCheck1">
+							Provide me with a backup 4Gx Modem
+						</label>
+					</div>
+
+			  </li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Choose Plan</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Standard Plus</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$75 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled pricing-list mt-3 mb-4">
+              <li>First month internet on us</li>
+              <li>No $99 connection fee</li>
+			  <li>60Mbps typical minimum evening speeds.</li>
+              <li class="highlight-list-red">Average speed near your area: 55MBps</li>
+              
+			  <li class="highlight-list">Predicted connection date: 12-11-2019</li>
+			  <li>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<label class="form-check-label" for="defaultCheck1">
+							Provide me with a backup 4Gx Modem
+						</label>
+					</div>
+
+			  </li>
+			
+			  
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Choose Plan</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Unlimited</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$90 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled pricing-list mt-3 mb-4">
+              <li>First month internet on us</li>
+              <li>No $99 connection fee</li>
+			  <li>100Mbps typical minimum evening speeds.</li>
+              <li class="highlight-list">Average speed near your area: 120MBps</li>
+              
+			  <li class="highlight-list">Predicted connection date: 12-11-2019</li>
+
+
+			  <li>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<label class="form-check-label" for="defaultCheck1">
+							Provide me with a backup 4Gx Modem
+						</label>
+					</div>
+
+			  </li>
+
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Choose Plan</button>
+          </div>
+        </div>
+
+		</div>
+      </div>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top" style="display:none">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+	<script>
+
+	$(document).ready(function(e){
+
+	$("#plans_div").hide();
+	}
+
+	)
+	$("#address_form").submit(function(e) {
+
+        //prevent Default functionality
+        e.preventDefault();
+		$("#plans_div").toggle();
+
+	}
+	)
+	</script>
+  </body>
+</html>

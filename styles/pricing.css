@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck{
+  min-width: 220px;
+  /*display:none;*/
+}
+
+.card {
+  min-width: 220px;
+}
+
+.pricing-list{
+font-size: 0.75rem;
+}
+.card-header{
+background: linear-gradient(to right, #1a5199 0, #00b4ff 100%);
+font-weight:bold;
+color:white;
+}
+.highlight-list{
+color:green;
+font-weight:bold;
+}
+.highlight-list-red{
+color:red;
+font-weight:bold;
+}
+.tcom-global-header__logo {
+    display: -webkit-box;
+    display: flex;
+    width: 22px;
+    height: 26px;
+    line-height: 78px;
+	background: url(https://www.telstra.com.au/etc/designs/comp-nav/assets/t-logo-pacific.svg) no-repeat;
+}
+.progress_sub_steps{
+/*font-size:0.75rem;*/
+}
+.progress-tracker {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    /* display: flex; */
+    margin: 0em auto !important;
+
+	padding: 0em 1em 0em 4em !important;
+    
+    list-style: none;
+}
+.form-check{
+font-weight:bold;
+font-color:blue;
+}
+
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }

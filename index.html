@@ -63,7 +63,7 @@
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">       
       
         <ul class="progress-tracker progress-tracker--text">
-          <li class="progress-step is-complete">
+          <li class="progress-step is-active">
             <div class="progress-marker"></div>
             <div class="progress-text">
               <h4 class="progress-title">Check Address</h4>
@@ -75,10 +75,10 @@
             </div>
           </li>
 
-          <li class="progress-step is-active">
+          <li class="progress-step">
             <div class="progress-marker"></div>
             <div class="progress-text">
-              <h4 class="progress-title">Choose Plan</h4>
+              <h4 class="progress-title">Choose Plan/Backup</h4>
              <div class="progress_sub_steps">
               <div>1. Choose a plan of your liking</div>
 			  <div>2. Choose to have a backup modem, till connection is activated</div>
@@ -146,7 +146,7 @@
 
 			  <li>
 					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<input class="form-check-input" type="checkbox" value="" id="check_backup1">
 						<label class="form-check-label" for="defaultCheck1">
 							Provide me with a backup 4Gx Modem
 						</label>
@@ -154,7 +154,7 @@
 
 			  </li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Choose Plan</button>
+            <button id="#button1" type="button" class="btn btn-lg btn-block btn-outline-primary choose_plan_buttons">Choose Plan</button>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -172,7 +172,7 @@
 			  <li class="highlight-list">Predicted connection date: 12-11-2019</li>
 			  <li>
 					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<input class="form-check-input" type="checkbox" value="" id="check_backup2">
 						<label class="form-check-label" for="defaultCheck1">
 							Provide me with a backup 4Gx Modem
 						</label>
@@ -182,7 +182,7 @@
 			
 			  
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Choose Plan</button>
+            <button id="#button2" type="button" class="btn btn-lg btn-block btn-outline-primary choose_plan_buttons">Choose Plan</button>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -202,7 +202,7 @@
 
 			  <li>
 					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<input class="form-check-input" type="checkbox" value="" id="check_backup3">
 						<label class="form-check-label" for="defaultCheck1">
 							Provide me with a backup 4Gx Modem
 						</label>
@@ -211,7 +211,7 @@
 			  </li>
 
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Choose Plan</button>
+            <button id="#button3" type="button" class="btn btn-lg btn-block btn-outline-primary choose_plan_buttons">Choose Plan</button>
           </div>
         </div>
 
@@ -278,6 +278,13 @@
 
 	}
 	)
+
+	$(".choose_plan_buttons").click(function(e) {
+
+        window.location.href = 'checkout.html';
+	}
+	)
+
 	</script>
   </body>
 </html>
